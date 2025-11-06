@@ -67,8 +67,7 @@
 </div>
 
 <script>
-    const layerUrl = "https://services1.arcgis.com/5pBvNzT8BD2t5xoD/arcgis/rest/services/Parcel_Public/FeatureServer/0/query";
-    const searchBtn = document.getElementById('searchBtn');
+    const layerUrl = "https://corsproxy.io/?" + encodeURIComponent("https://services1.arcgis.com/5pBvNzT8BD2t5xoD/arcgis/rest/services/Parcel_Public/FeatureServer/0/query");    const searchBtn = document.getElementById('searchBtn');
     const spinner = searchBtn.querySelector('.spinner');
     const searchTerm = document.getElementById('searchTerm');
     const searchType = document.getElementById('searchType');
@@ -161,3 +160,4 @@
 </script>
 </body>
 </html>
+
